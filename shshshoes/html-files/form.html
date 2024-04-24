@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoes it'up!</title>
+    <link rel="stylesheet" type="text/css" href="../Css-files/loginstyle.css">
+    <link rel="icon" type="image/png" href="../img/images-1/others/icons-shoes-favicon.png">
+</head>
+<body id="loginBody">
+<div class="container" id="loginContainer">
+    <div class="registration-container" id="registrationContainer">
+        <div class="registration-logo" id="registrationLogo">
+            <img src="../img/images-1/others/icons-shoes-logo-1-form.png" alt="Shoes-Logo" width="100">
+        </div>
+        <div class="registration-form" id="registrationFormDiv">
+            <h1>Welcome to Shoes it'up!</h1>
+            <h2>Please provide us with information below</h2>
+            <form id="registrationForm" onsubmit="startLoadTimer()">
+                <!-- Add onclick attribute to trigger click on file input -->
+                <div id="drop_zone" onclick="document.getElementById('fileInput').click()">Drop files here</div>
+                <input type="file" id="fileInput" multiple style="display: none;" onchange="handleFileSelect(event)">
+                <div id="file_list"></div>
+                <div class="form-item" id="nameFormItem">
+                    <label for="name">Name*</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                </div>
+                <div class="form-item" id="emailFormItem">
+                    <label for="email">Email*</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+                <div class="form-item" id="passwordFormItem">
+                    <label for="password">Password*</label>
+                    <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                </div>
+                <div class="form-item" id="confirmPasswordFormItem">
+                    <label for="confirmPassword">Confirm Password*</label>
+                    <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm your password" required>
+                </div>
+                <div class="form-item" id="telephoneFormItem">
+                    <label for="telephone">Telephone*</label>
+                    <input type="tel" id="telephone" name="telephone" placeholder="XXX-XXXXXXX" pattern="\d{3}-\d{7}" required>
+                </div>
+                <div class="form-item" id="genderFormItem">
+                    <label>Gender*</label>
+                    <div class="form-checkbox" id="genderCheckbox">
+                        <input type="radio" id="male" name="gender" value="male">
+                        <label for="male">Male</label>
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">Female</label>
+                    </div>
+                </div>
+                <div class="form-buttons" id="buttonsDiv">
+                    <button type="submit" id="submitButton">Log In</button>
+                    <button type="button" id="clearButton">Clear</button>
+                </div>
+                <div id="errorMessage" class="error"></div>
+            </form>
+        </div>
+    </div>
+</div>
+<iframe src="weather-widget.html" style="border: none;" width="375" height="250"></iframe>
+<div id="loadTimer">Load Time: <span id="loadTime">0</span> seconds</div>
+
+<script src="../javascript/form.js"></script>
+</body>
+</html>

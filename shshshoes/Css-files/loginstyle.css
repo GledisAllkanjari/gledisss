@@ -1,0 +1,170 @@
+body ,html{
+  margin: 0;
+  padding: 0;
+}
+
+#loginBody {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url('../img/images-1/others/sport\ items\ backgorund.png');
+}
+
+/* Container styles */
+#loginContainer {
+  text-align: center;
+  max-width: 350px; /* Limit maximum width */
+  width: 90%; /* Ensure responsiveness */
+}
+
+/* Form styles */
+#registrationFormDiv {
+  max-width: 300px; /* Limit maximum width */
+  width: 100%; /* Ensure responsiveness */
+  padding: 10px; /* Preserve padding */
+  border: 2px solid #DB9A4B;
+  border-radius: 5px;
+  background-color: #E3BF9A;
+  text-align: center;
+  transform: translateZ(10px); /* Apply translation in Z-axis for 3D effect */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add box shadow for depth */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"] {
+  width: calc(100% - 22px); /* Take up full width with padding and border */
+  padding: 9px; /* Add padding */
+  border: 1px solid #00FAC4; /* Add border */
+  border-radius: 5px; /* Add border radius */
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
+  margin-bottom: 10px; /* Maintain margin between fields */
+}
+
+input[type="text"]::placeholder,
+input[type="email"]::placeholder,
+input[type="password"]::placeholder,
+input[type="tel"]::placeholder {
+  color: #999; /* Set placeholder text color */
+  font-style: italic; /* Italicize placeholder text */
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.2em;
+  font-weight: 500; /* Corrected typo */
+}
+
+/* Form item styles */
+.form-item {
+  margin-bottom: 10px; /* Reduce margin */
+  text-align: left;
+}
+
+/* Label styles */
+label {
+  display: block;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Error message styles */
+.error {
+  color: red;
+  margin-top: 10px;
+}
+
+/* Buttons styles */
+.form-buttons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Submit button styles */
+#submitButton {
+  background-color: #007bff;
+  color: #fff;
+}
+
+#submitButton:hover {
+  background-color: #0056b3;
+}
+
+/* Clear button styles */
+#clearButton {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+#clearButton:hover {
+  background-color: #bb2d3b;
+}
+
+/* Gender form item */
+#genderFormItem {
+  display: flex; /* Set container to flex */
+  flex-direction: column; /* Arrange items vertically */
+  align-items: flex-start; /* Align items to the start of the container */
+  margin-bottom: 10px; /* Add margin below */
+}
+
+/* Gender checkbox container */
+#genderCheckbox {
+  display: flex; /* Set container to flex */
+  justify-content: flex-start; /* Align items to the start of the container */
+}
+
+/* Gender input styles */
+#male,
+#female {
+  margin-right: 10px;
+}
+  
+#drop_zone {
+  background-color: #f9f9f9;
+  border: #ccc 1px dashed;
+  width: 300px;
+  height: 50px;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+  font-size: 15px;
+  cursor: pointer; /* Add cursor pointer to indicate clickability */
+}
+#drop_zone.over {
+  background-color: #ffffcc;
+  border: #ff6600 1px dashed;
+}
+#file_list {
+  margin-top: 10px;
+}
+
+/* Additional CSS styles for the load timer */
+#loadTimer {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #E3BF9A;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 18px;
+  z-index: 9999;
+  display: none;
+}

@@ -1,0 +1,40 @@
+/* Common styles for the weather widget */
+.weatherwidget-io {
+  display: inline-block;
+  padding: 15px 20px;
+  border-radius: 20px; /* Rounded corners */
+  background-color: #f2f2f2;
+  color: #333;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+  position: relative;
+  border: 2px solid transparent;
+  background: linear-gradient(135deg, #9B948A, #F0C486);
+}
+
+.weatherwidget-io::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url('https://weatherwidget.io/icons/v2.0/baseline_weather/weather-partly-cloudy-24px.svg');
+  background-size: cover;
+  margin-right: 10px;
+  position: absolute;
+  top: 50%;
+  left: 10px;
+}
+
+
+/* Responsive styles for screens with width less than 600px */
+@media screen and (max-width: 400px) {
+  .weatherwidget-io {
+      padding: 10px 15px; /* Adjust padding for smaller screens */
+      font-size: 14px; /* Adjust font size for smaller screens */
+      border-radius: 15px; /* Adjust border radius for smaller screens */
+  }
+}
+

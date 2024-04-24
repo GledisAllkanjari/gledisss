@@ -1,0 +1,33 @@
+#page-header.about-header {
+    background-image: url("../img/blog6.png");
+}
+
+
+#about-head {
+    display: flex;
+    align-items: center;
+}
+
+#about-head img {
+    width: 50%;
+    height: auto;
+}
+
+#about-head div {
+    padding-left: 30px;
+}
+
+#shoe-store {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+.shoe-store1{
+  width:600px;
+}
+.shoe-store2{
+justify-content: space-between;
+text-align: center;
+}
